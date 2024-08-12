@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="shortcut icon" href="https://i.ibb.co/wyXNT2p/Group.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans&display=swap" rel="stylesheet">
+        <title>Fruit Burst</title>
+    </head>
+    <body class="font-[lato]">
+        <header class="lg:container mx-auto py-5">
+            <nav class="navbar justify-between lg:bg-[#f85559] rounded-full">
+                <div class="navbar-start hidden lg:flex">
+                    <ul class="menu text-white text-lg no-animation menu-horizontal px-1">
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent';">Home</a></li>
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent';">About us</a></li>
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent';">Shop</a></li>
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent';">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                  <a class="flex items-center py-2 gap-3"><img src="https://i.ibb.co/wyXNT2p/Group.png" class="w-[27px] h-[30px] lg:w-[54px] lg:h-[60px]" alt="logo"> <span class="font-bold text-[#121212] lg:text-white text-[20px] lg:text-4xl">Fruit Burst</span></a>
+                </div>
+                <div class="navbar-end">
+                    <div class="relative hidden lg:flex text-gray-600 mr-4">
+                        <input type="search" name="serch" placeholder="Search here" class="bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                          <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                          </svg>
+                        </button>
+                    </div>
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost pr-0 md:mr-3 lg:hidden">
+                        <img src="https://i.ibb.co/qBsV7GV/Vector.png" alt="">
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm items-center dropdown-content right-0 no-animation bg-white rounded-box z-[1] mt-3 w-42 p-2 shadow">
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent'">Home</a></li>
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent'">About us</a></li>
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent'">Shop</a></li>
+                        <li><a class="hover:bg-transparent" onmousedown="this.style.backgroundColor='transparent'">All Fruits</a></li>
+                        <li>
+                            <div class="relative text-white" onmousedown="this.style.backgroundColor='transparent'">
+                                <input type="search" name="serch" placeholder="Search here" class="bg-black w-[150px] h-10 px-5 pr-10 rounded-full text-sm focus:outline-none">
+                                <button type="submit" class="absolute right-0 top-0 mt-4 mr-6">
+                                  <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                    <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"/>
+                                  </svg>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <section class="relative">
+            <div class="container mx-auto px-3 md:px-0">
+                <div class="hero relative bg-cover h-auto lg:h-[600px] rounded-lg bg-center bg-no-repeat" style="background-image: url(https://i.ibb.co/WvbWkXh/Rectangle-3.png);">
+                    <div class="absolute w-full h-[80%] rounded-lg top-0 bg-gradient-to-b from-black/40 to-transparent"></div>
+                    <div class="hero-content  lg:-mt-32 text-white text-center">
+                        <div class="md:max-w-[40rem]">
+                            <h1 class="my-5 text-[32px] md:text-[72px]  font-bold">Exotic tastes at your doorstep</h1>
+                            <p class="mb-5 text-md">We supply highly quality organic products</p>
+                            <a class="btn bg-[#f85559] border-0 text-md hover:bg-[#f85559] text-white no-animation">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:flex justify-center items-start -mt-[90px] hidden relative z-10">
+            <div class="flex justify-center items-center">
+                <div class="flex gap-9 bg-white rounded-lg shadow-2xl py-4 px-12">
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="https://i.ibb.co/yS235h2/pngwing-3.png" alt="">
+                        <p class="text-md text-[#121212CC]">Strawberry</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="https://i.ibb.co/xD2SfFz/1-1.png" alt="">
+                        <p class="text-md text-[#121212CC]">Orange</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="https://i.ibb.co/W3VqyPJ/pngwing-4.png" alt="">
+                        <p class="text-md text-[#121212CC]">Mango</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="https://i.ibb.co/7bHCCz6/pngwing-1.png" alt="">
+                        <p class="text-md text-[#121212CC]">Strawberry</p>
+                    </div>
+                    <div class="flex flex-col items-center gap-2">
+                        <img src="https://i.ibb.co/fn1Mp6d/pngwing-2.png" alt="">
+                        <p class="text-md text-[#121212CC]">Mango</p>
+                    </div>
+                </div>
+            </d>
+        </section>
+        <section class="lg:mt-[80px] mt-8">
+            <div class="lg:container mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between items-center">
+                    <div class="md:w-[615px] text-center lg:text-left mb-9">
+                        <h3 class="text-5xl text-[#121212] font-bold pb-9">Deal of the day</h3>
+                        <p class="text-[16px] text-[#12121299] px-3 lg:px-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="flex items-center mb-9 md:gap-3">
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="md:text-5xl text-[28px] font-bold text-[#121212]">29</h3>
+                            <p class="text-[16px] text-[#12121299]">Days</p>
+                        </div>
+                        <img src="https://i.ibb.co/27Tr7xt/Frame.png" class="w-[24px] h-[24px]" alt="">
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="md:text-5xl text-[28px] font-bold text-[#121212]">15</h3>
+                            <p class="text-[16px] text-[#12121299]">Hours</p>
+                        </div>
+                        <img src="https://i.ibb.co/27Tr7xt/Frame.png" class="w-[24px] h-[24px]"  alt="">
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="md:text-5xl text-[28px] font-bold text-[#121212]">25</h3>
+                            <p class="text-[16px] text-[#12121299]">Minutes</p>
+                        </div>
+                        <img src="https://i.ibb.co/27Tr7xt/Frame.png" class="w-[24px] h-[24px]"  alt="">
+                        <div class="flex flex-col gap-2 items-center">
+                            <h3 class="md:text-5xl text-[28px] font-bold text-[#121212]">08</h3>
+                            <p class="text-[16px] text-[#12121299]">Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="md:container mx-auto mb-9">
+                <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mb-5 justify-items-center">
+                    <div class="shadow flex flex-col items-center mb-4 py-9 px-14">
+                        <img src="https://i.ibb.co/RPjdRQg/pngwing-5.png" alt="">
+                        <h2 class="text-2xl font-bold text-[##121212] py-5">12.90$ - 18.85$</h2>
+                        <hr class="w-full">
+                        <p class="text-base text-[#12121299] py-3">Apples</p>
+                        <ul class="flex pb-5">
+                            <li class="">
+                                <div class="mask mask-star bg-[#F85559] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star w-[25px] h-[24px]" style="background: linear-gradient(90deg, #F85559 0%, #F85559 50%, #FBC0A8 50%, #FBC0A8 100%);"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                        </ul>
+                        <button class="text-lg text-[#F85559] font-semibold">Details</button>
+                    </div>
+                    <div class="shadow flex flex-col items-center mb-4 py-9 px-14">
+                        <img src="https://i.ibb.co/4ZKfwGV/pngwing-6.png" alt="">
+                        <h2 class="text-2xl font-bold text-[##121212] py-5">12.90$ - 18.85$</h2>
+                        <hr class="w-full">
+                        <p class="text-base text-[#12121299] py-3">Orange</p>
+                        <ul class="flex pb-5">
+                            <li class="">
+                                <div class="mask mask-star bg-[#F85559] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star w-[25px] h-[24px]" style="background: linear-gradient(90deg, #F85559 0%, #F85559 50%, #FBC0A8 50%, #FBC0A8 100%);"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                        </ul>
+                        <button class="text-lg text-[#F85559] font-semibold">Details</button>
+                    </div>
+                    <div class="shadow flex flex-col items-center mb-4 py-9 px-14">
+                        <img src="https://i.ibb.co/gJ6Tsj0/pngwing-7.png" alt="">
+                        <h2 class="text-2xl font-bold text-[##121212] py-5">12.90$ - 18.85$</h2>
+                        <hr class="w-full">
+                        <p class="text-base text-[#12121299] py-3">Red Dragon</p>
+                        <ul class="flex pb-5">
+                            <li class="">
+                                <div class="mask mask-star bg-[#F85559] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star w-[25px] h-[24px]" style="background: linear-gradient(90deg, #F85559 0%, #F85559 50%, #FBC0A8 50%, #FBC0A8 100%);"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                        </ul>
+                        <button class="text-lg text-[#F85559] font-semibold">Details</button>
+                    </div>
+                    <div class="shadow flex flex-col items-center mb-4 py-9 px-14">
+                        <img src="https://i.ibb.co/sKpRHZf/pngwing-8.png" alt="">
+                        <h2 class="text-2xl font-bold text-[##121212] py-5">12.90$ - 18.85$</h2>
+                        <hr class="w-full">
+                        <p class="text-base text-[#12121299] py-3">Banana</p>
+                        <ul class="flex pb-5">
+                            <li class="">
+                                <div class="mask mask-star bg-[#F85559] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star w-[25px] h-[24px]" style="background: linear-gradient(90deg, #F85559 0%, #F85559 50%, #FBC0A8 50%, #FBC0A8 100%);"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                            <li class="">
+                                <div class="mask mask-star bg-[#FBC0A8] w-[25px] h-[24px]"></div>
+                            </li>
+                        </ul>
+                        <button class="text-lg text-[#F85559] font-semibold">Details</button>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <a href="#" class="bg-[#F85559] text-white text-xl px-4 py-3 rounded-lg">Shop All</a>
+                </div>
+            </div>
+        </section>
+        <section class="relative my-20">
+            <div class="container mx-auto px-3 md:px-0">
+                <div class="hero relative bg-cover h-auto lg:h-[690px] rounded-lg bg-center bg-no-repeat" style="background-image: url(https://i.ibb.co/WvbWkXh/Rectangle-3.png);">
+                    <div class="absolute w-full h-full rounded-lg top-0 bg-black opacity-50"></div>
+                    <div class="hero-content text-white text-center">
+                        <div>
+                            <h1 class="mb-4 text-xl md:text-5xl  font-bold">Meet the team section</h1>
+                            <p class="mb-9 text-sm mx-auto lg:text-xl md:w-[630px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                            <div class="flex flex-col md:flex-row gap-14">
+                                <div class="flex flex-col items-center">
+                                    <img src="https://i.ibb.co/yFt0XF8/Ellipse-2.png" class="mb-9" alt="">
+                                    <p class="mb-2 text-2xl font-sem">Awlad Hossain</p>
+                                    <p class="mb-4 text-base">Fruits Expert</p>
+                                    <ul class="flex gap-3">
+                                        <li><a href=""><img src="https://i.ibb.co/qyfTdRL/Layer-2.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/bXbghjK/Layer-2-1.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/jvPzrY5/Layer-2-2.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img src="https://i.ibb.co/qmWCTxv/Ellipse-2-1.png" class="mb-9" alt="">
+                                    <p class="mb-2 text-2xl font-sem">Safia Chowdhury</p>
+                                    <p class="mb-4 text-base">Fruits Expert</p>
+                                    <ul class="flex gap-3">
+                                        <li><a href=""><img src="https://i.ibb.co/qyfTdRL/Layer-2.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/bXbghjK/Layer-2-1.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/jvPzrY5/Layer-2-2.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img src="https://i.ibb.co/YPvfQWZ/Ellipse-2-2.png" class="mb-9" alt="">
+                                    <p class="mb-2 text-2xl font-sem">Rakib Hossain</p>
+                                    <p class="mb-4 text-base">Fruits Expert</p>
+                                    <ul class="flex gap-3">
+                                        <li><a href=""><img src="https://i.ibb.co/qyfTdRL/Layer-2.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/bXbghjK/Layer-2-1.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/jvPzrY5/Layer-2-2.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <img src="https://i.ibb.co/jvGQvkJ/Ellipse-2-3.png" class="mb-9" alt="">
+                                    <p class="mb-2 text-2xl font-sem">Chaity Akhtar</p>
+                                    <p class="mb-4 text-base">Fruits Expert</p>
+                                    <ul class="flex gap-3">
+                                        <li><a href=""><img src="https://i.ibb.co/qyfTdRL/Layer-2.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/bXbghjK/Layer-2-1.png" alt=""></a></li>
+                                        <li><a href=""><img src="https://i.ibb.co/jvPzrY5/Layer-2-2.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pb-9">
+            <div class="md:container mx-auto text-center">
+                <h3 class="text-xl md:text-5xl font-bold text-[#121212]">Why Choose Us</h3>
+                <p class="text-sm md:text-base text-[#12121299] mx-auto py-8 px-14 lg:px-0 lg:w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class="flex flex-col lg:flex-row gap-4">
+                    <div class="flex flex-1 order-2 gap-4 lg:gap-0 lg:order-1 flex-col justify-between">
+                        <div class="flex flex-col lg:flex-row gap-4 items-start text-center lg:text-left">
+                            <div class="min-w-[60px] mx-auto lg:mx-0 min-h-[60px] bg-[#e7e7e7] rounded-full flex items-center justify-center"><img src="https://i.ibb.co/TPcSsdq/Vector.png" alt=""></div>
+                            <div class="flex flex-col mx-auto gap-2">
+                                <h4 class="text-2xl font-bold text-[#121212]">Dedicated Team</h4>
+                                <hr class="w-[100px] mx-auto lg:mx-0 border border-[#121212CC]">
+                                <p class="text-base text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row gap-4 items-start text-center lg:text-left">
+                            <div class="min-w-[60px] mx-auto lg:mx-left min-h-[60px] bg-[#e7e7e7] rounded-full flex items-center justify-center"><img src="https://i.ibb.co/9vq5BLz/Vector-1.png" alt=""></div>
+                            <div class="flex flex-col mx-auto gap-2">
+                                <h4 class="text-2xl font-bold text-[#121212]">Fresh is Best</h4>
+                                <hr class="w-[100px] mx-auto lg:mx-0 border border-[#121212CC]">
+                                <p class="text-base text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row gap-4 items-start text-center lg:text-left">
+                            <div class="min-w-[60px] mx-auto min-h-[60px] bg-[#e7e7e7] rounded-full flex items-center justify-center"><img src="https://i.ibb.co/wLJr5y4/gift-box-1.png" alt=""></div>
+                            <div class="flex mx-auto flex-col gap-2">
+                                <h4 class="text-2xl font-bold text-[#121212]">Gift Certificates</h4>
+                                <hr class="w-[100px] mx-auto lg:mx-0 border border-[#121212CC]">
+                                <p class="text-base text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 mx-auto lg:order-2">
+                        <img src="https://i.ibb.co/f2yDKS9/Rectangle-7.png" alt="">
+                    </div>
+                    <div class="flex flex-1 order-3 gap-4 lg:gap-0 flex-col justify-between">
+                        <div class="flex flex-col lg:flex-row gap-4 items-start text-center lg:text-right">
+                            <div class="flex order-2 mx-auto lg:order-1 flex-col gap-2">
+                                <h4 class="text-2xl font-bold text-[#121212]">Integrated Supplier</h4>
+                                <hr class="w-[100px] mx-auto lg:mr-0 border border-[#121212CC]">
+                                <p class="text-base text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                            <div class="min-w-[60px] order-1 lg:order-2 mx-auto lg:mx-0 min-h-[60px] bg-[#e7e7e7] rounded-full flex items-center justify-center"><img src="https://i.ibb.co/QmDsXJw/Group.png" alt=""></div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row gap-4 items-start text-center lg:text-right">
+                            <div class="flex mx-auto order-2 lg:order-1 flex-col gap-2">
+                                <h4 class="text-2xl font-bold text-[#121212]">Sustainable Practice</h4>
+                                <hr class="w-[100px] mx-auto lg:mr-0 border border-[#121212CC]">
+                                <p class="text-base text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                            <div class="min-w-[60px] order-1 lg:order-2 mx-auto lg:mx-0 min-h-[60px] bg-[#e7e7e7] rounded-full flex items-center justify-center"><img src="https://i.ibb.co/tDkwyKC/ice-cream-1.png" alt=""></div>
+                        </div>
+                        <div class="flex flex-col lg:flex-row gap-4 items-start text-center lg:text-right">
+                            <div class="flex order-2 lg:order-1 mx-auto flex-col gap-2">
+                                <h4 class="text-2xl font-bold text-[#121212]">The Benefits Only</h4>
+                                <hr class="w-[100px] mx-auto lg:mr-0 border border-[#121212CC]">
+                                <p class="text-base text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            </div>
+                            <div class="min-w-[60px] order-1 lg:order-2 mx-auto lg:mx-0 min-h-[60px] bg-[#e7e7e7] rounded-full flex items-center justify-center"><img src="https://i.ibb.co/ByswgV3/like-1.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-[#121212] py-9">
+            <div class="md:container mx-auto flex flex-col items-center justify-center">
+                <a href="#" class="flex items-center">
+                    <img src="https://i.ibb.co/wyXNT2p/Group.png" class="pr-3"  alt="logo">
+                    <p class="text-[40px] font-semibold text-white">Fruit Burst</p>
+                </a>
+                <ul class="flex text-[18px] grid md:grid-cols-6 grid-cols-3 justify-items-center py-9 gap-8 text-white">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">My Account</a></li>
+                </ul>
+                <ul class="flex grid px-4 md:px-0 grid-cols-6 gap-8 pb-9">
+                    <li><a href=""><img src="https://i.ibb.co/1LryVBH/Vector.png" alt=""></a></li>
+                    <li><a href=""><img src="https://i.ibb.co/Yb0ChTc/facebook-1.png" alt=""></a></li>
+                    <li><a href=""><img src="https://i.ibb.co/tJLyYmy/Group-49.png" alt=""></a></li>
+                    <li><a href=""><img src="https://i.ibb.co/DKWRJkf/x31-0-Linkedin.png" alt=""></a></li>
+                    <li><a href=""><img src="https://i.ibb.co/6NzN06Q/Group-51.png" alt=""></a></li>
+                    <li><a href=""><img src="https://i.ibb.co/gShJCSk/apple-1.png" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
